@@ -2,13 +2,13 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>Tags - Hexo</title>
+<title>Getting Started with Minos - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/tags/index.html" rel="alternate" hreflang="zh-CN" />
+<link href="/Getting-Started-with-Minos/" rel="alternate" hreflang="zh-CN" />
     
 
 
@@ -18,17 +18,20 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://oxf5.github.io/en/tags/index.html">
+    <meta name="description" content="Minos is a simple and retro styled Hexo theme which concentrates more on your ideas. Minos is very expressive as it has extensive plugin support, colorful code highlighting choices, flexible configura">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Started with Minos">
+<meta property="og:url" content="http://oxf5.github.io/en/Getting-Started-with-Minos/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Minos is a simple and retro styled Hexo theme which concentrates more on your ideas. Minos is very expressive as it has extensive plugin support, colorful code highlighting choices, flexible configura">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://oxf5.github.io/hexo-theme-minos/gallery/forest.jpg">
+<meta property="article:published_time" content="2018-05-14T10:15:59.000Z">
+<meta property="article:modified_time" content="2019-10-30T01:12:10.000Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Minos">
-<meta property="article:tag" content="Plugin">
-<meta property="article:tag" content="music">
-<meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://oxf5.github.io/hexo-theme-minos/gallery/forest.jpg">
 
 
 
@@ -113,9 +116,9 @@
             
             
             
-            <a class="navbar-item" title="GitHub" target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-minos">
+            <a class="navbar-item" title="Edit on GitHub" target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-minos/edit/site/source/_posts/Getting-Started-with-Minos.md">
                 
-                <i class="fab fa-github"></i>
+                <i class="fas fa-edit"></i>
                 
             </a>
                
@@ -124,34 +127,104 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#Tags</h5>
-        </div>
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Getting Started with Minos
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-05-14T10:15:59.000Z" itemprop="datePublished">May 14 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/en/categories/Documentation/">Documentation</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 minutes read (About 236 words)
+        </span>
+        
     </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="columns is-variable is-1 is-multiline is-mobile">
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p><img src="/hexo-theme-minos/gallery/forest.jpg"><br>Minos is a simple and retro styled Hexo theme which concentrates more on your ideas. Minos is very expressive as it has extensive plugin support, colorful code highlighting choices, flexible configurations and out-of-box multi-language support. Meanwhile, minimalism also makes Minos a great theme for both writers and readers who desire a better reading experience.</p>
+<span id="more"></span>
+
+<p>To get started with Minos, download and unzip Minos to your Hexo blog’s theme directory or using the following command in your blog’s root directory:</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="hljs-built_in">clone</span> https://github.com/ppoffice/hexo-theme-minos.git themes/minos</span><br></pre></td></tr></tbody></table></figure>
+
+<p>You can also specify a version for Minos after downloading the theme through <code>git</code>. Replace the version code in the following command and execute:</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 1.0.0</span><br></pre></td></tr></tbody></table></figure>
+
+<p>You can also install Minos as a git submodule by calling the following command:</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add https://github.com/ppoffice/hexo-theme-minos.git themes/minos</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Next, replace the theme setting in your blog’s <code>_config.yml</code> file:</p>
+<figure class="highlight yaml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">theme:</span> <span class="hljs-string">minos</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>Then, edit <code>_config.yml.example</code> file in the <code>themes/minos</code> folder to your satisfaction and save it as <code>_config.yml</code> in the same directory.</p>
+<blockquote class="colorquote success"><p>For more information about the configurations, please refer to <a href="/Configuring-Minos/" title="Configuring Minos">Configuring Minos</a>.</p>
+</blockquote>
+
+<p>Finally, don’t forget to clone the <code>site</code> branch in the Minos repository if you need further examples about installation and configuration.</p>
+</body></html>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/en/tags/Minos/">#Minos</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/en/tags/Minos/">#Minos&nbsp;(8)</a>
-            </span>
+            <a href="/en/hello-world/">Hello World</a>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/en/tags/Plugin/">#Plugin&nbsp;(3)</a>
-            </span>
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/en/tags/music/">#music&nbsp;(1)</a>
-            </span>
+            <a href="/en/Configuring-Minos/">Configuring Minos</a>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/en/tags/markdown/">#markdown&nbsp;(1)</a>
-            </span>
-            
-        </div>
+        </span>
+    </div>
+    
+</article>
+
+
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
+
+</div>
+
+
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
@@ -195,11 +268,11 @@
         <div class="dropdown-menu has-text-left" role="menu">
             <div class="dropdown-content">
             
-                <a href="/tags/index.html" class="dropdown-item">
+                <a href="/Getting-Started-with-Minos/" class="dropdown-item">
                     简体中文
                 </a>
             
-                <a href="/en/tags/index.html" class="dropdown-item">
+                <a href="/en/Getting-Started-with-Minos/" class="dropdown-item">
                     English
                 </a>
             
