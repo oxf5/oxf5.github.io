@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>Configuring Minos - Hexo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="">
+
+
+
+
+
+    <meta name="description" content="Minos employs a prioritized configuration system to ensure flexibility and integrity of the configurations. With Minos, you can customize your site for every post and language variant without worryin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Configuring Minos">
+<meta property="og:url" content="http://oxf5.github.io/Configuring-Minos/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Minos employs a prioritized configuration system to ensure flexibility and integrity of the configurations. With Minos, you can customize your site for every post and language variant without worryin">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://oxf5.github.io/gallery/audio-console.jpg">
+<meta property="og:image" content="http://oxf5.github.io/gallery/docs/configuration/language.png">
+<meta property="og:image" content="http://oxf5.github.io/gallery/docs/configuration/page.png">
+<meta property="og:image" content="http://oxf5.github.io/gallery/docs/configuration/hierarchy.svg">
+<meta property="article:published_time" content="2018-05-14T10:15:58.000Z">
+<meta property="article:modified_time" content="2019-10-30T01:12:10.000Z">
+<meta property="article:author" content="k0xx">
+<meta property="article:tag" content="Minos">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://oxf5.github.io/gallery/audio-console.jpg">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+<meta name="generator" content="Hexo 5.4.1"></head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    <img src="/source/images/logo.png" alt="" height="28">
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">归档</a>
+            
+            <a class="navbar-item "
+               href="/about">关于</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="搜索" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="目录">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Theme-configurations">1&nbsp;&nbsp;<b>Theme configurations</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Language-variant-of-theme-configurations">2&nbsp;&nbsp;<b>Language variant of theme configurations</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Page-configurations">3&nbsp;&nbsp;<b>Page configurations</b></a>
+                    
+                    
+                    <hr class="navbar-divider">
+                    
+                    
+                    <a class="navbar-item" href="#Configuration-hierarchy">4&nbsp;&nbsp;<b>Configuration hierarchy</b></a>
+                    
+                </div>
+            </div>
+            
+            
+            <a class="navbar-item" title="Edit on GitHub" target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-minos/edit/site/source/_posts/Configuring-Minos.md">
+                
+                <i class="fas fa-edit"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Configuring Minos
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2018-05-14T10:15:58.000Z" itemprop="datePublished">5月 14 2018</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Documentation/">Documentation</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 分钟 读完 (约 544 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><img src="/gallery/audio-console.jpg" class="">
+<p>Minos employs a prioritized configuration system to ensure flexibility and integrity of the configurations. With Minos, you can customize your site for every post and language variant without worrying about breaking the compilation. Minos will also remind you of any missing configurations if you intend to enable some features.</p>
+<span id="more"></span>
+
+<h2 id="Theme-configurations"><a href="#Theme-configurations" class="headerlink" title="Theme configurations"></a>Theme configurations</h2><p>The <code>_config.yml</code> file at the theme’s root contains configurations mostly relate to the layout and plugins. Configuration options, their meaning and default values are described in the <code>_config.yml.example</code> file. Some complex configurations, like <code>search</code>, <code>share</code>, <code>comment</code> and <code>plugins</code>, will also be explained with details in the following documentation.</p>
+<blockquote class="colorquote info"><p><b>Related posts</b><br></p>
+<ol>
+<li><a href="/Setting-up-a-Commenting-Service/" title="Setting up a Commenting Service">Setting up a Commenting Service</a><br></li>
+<li><a href="/Enable-Search-Engine-Integration-in-Minos/" title="Enable Search Engine Integration in Minos">Enable Search Engine Integration in Minos</a><br></li>
+<li><a href="/Grow-Your-Audience-with-Share-Buttons/" title="Grow Your Audience with Share Buttons">Grow Your Audience with Share Buttons</a></li>
+</ol>
+</blockquote>
+
+<h2 id="Language-variant-of-theme-configurations"><a href="#Language-variant-of-theme-configurations" class="headerlink" title="Language variant of theme configurations"></a>Language variant of theme configurations</h2><p>When you are creating a website which is served in several languages, you may want to make sure certain page elements are display in appropriate language or some plugins to be switched to localized ones. Minos provides the language variant feature to help you do that. Simply create <code>_config.&lt;language_name&gt;.yml</code> besides theme’s <code>_config.yml</code> and change the configurations you want. Every time files for a specific language is going to be generated, Minos will look for the values in the <code>_config.&lt;language_name&gt;.yml</code> file of that language and override same configurations in the default <code>_config.yml</code>. For more information on how to set up multiple language support, please refer to the <a href="/">Guide to Multiple Language Support in Minos</a>.</p>
+<p><strong>Example: localize navigation menus</strong></p>
+<figure class="highlight yaml hljs"><figcaption><span>_config.zh-cn.yml</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-attr">menu:</span></span><br><span class="line">  <span class="hljs-string">归档:</span> <span class="hljs-string">/archives</span></span><br><span class="line">  <span class="hljs-string">文档:</span> <span class="hljs-string">/categories/Documentation</span></span><br><span class="line">  <span class="hljs-string">关于:</span> <span class="hljs-string">/about</span></span><br></pre></td></tr></tbody></table></figure>
+<div style="border:1px solid #ccc">
+<img src="/gallery/docs/configuration/language.png" class="" title="Localize navigation menus" alt="Localize navigation menus">
+</div>
+
+<h2 id="Page-configurations"><a href="#Page-configurations" class="headerlink" title="Page configurations"></a>Page configurations</h2><p>Apart from the above two types of configuration, Minos also lets you customize any page or post with page configurations. For instance, you may wish to disable the comment function in some posts, or show an additional link in the navigation bar. All of these can be achieved with page configuration where you override the theme configurations in the post’s front-matter.</p>
+<p><strong>Example: override default navigation bar links</strong></p>
+<figure class="highlight markdown hljs"><figcaption><span>about.md</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line">title: Minos - A Hexo theme</span><br><span class="line">date: 2018-05-14 18:15:58</span><br><span class="line">navbar<span class="hljs-emphasis">_links:</span></span><br><span class="line"><span class="hljs-emphasis">  Download:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fab fa-github</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Buy:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fas fa-shopping-cart</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Help: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">---</span></span><br><span class="line"><span class="hljs-emphasis"># This is the post content...</span></span><br></pre></td></tr></tbody></table></figure>
+<div style="border:1px solid #ccc">
+<img src="/gallery/docs/configuration/page.png" class="" title="Override default navigation bar links" alt="Override default navigation bar links">
+</div>
+
+<h2 id="Configuration-hierarchy"><a href="#Configuration-hierarchy" class="headerlink" title="Configuration hierarchy"></a>Configuration hierarchy</h2><p>When looking up the value of a specific configuration, Minos will first look at the post/page’s front-matter to find if the configuration exists. If true, the value from the front-matter is taken. Otherwise, Minos will move on to the language variant of the theme configuration file <code>_config.&lt;language_name&gt;.yml</code> if the current page is set to use a non-primary language, and look up for the required configuration value. If the value is still not found in the above places, Minos will fallback to the default theme configuration file <code>_config.yml</code>.</p>
+<img src="/gallery/docs/configuration/hierarchy.svg" class="" title="Configuration overriding process" alt="Configuration overriding process"></body></html>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Minos/">#Minos</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/Getting-Started-with-Minos/">Getting Started with Minos</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/Setting-up-a-Commenting-Service/">Setting up a Commenting Service</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2022 k0xx&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        target="_blank" rel="noopener" href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" target="_blank" rel="noopener" href="https://github.com/oxf5">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+
+<script src="/js/script.js"></script>
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+    
+</body>
+</html>
