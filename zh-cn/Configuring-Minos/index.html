@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/en/Configuring-Minos/" rel="alternate" hreflang="en" />
-    
 
 
 <meta name="description" content="">
@@ -198,14 +196,14 @@
 
 <h2 id="Language-variant-of-theme-configurations"><a href="#Language-variant-of-theme-configurations" class="headerlink" title="Language variant of theme configurations"></a>Language variant of theme configurations</h2><p>When you are creating a website which is served in several languages, you may want to make sure certain page elements are display in appropriate language or some plugins to be switched to localized ones. Minos provides the language variant feature to help you do that. Simply create <code>_config.&lt;language_name&gt;.yml</code> besides theme’s <code>_config.yml</code> and change the configurations you want. Every time files for a specific language is going to be generated, Minos will look for the values in the <code>_config.&lt;language_name&gt;.yml</code> file of that language and override same configurations in the default <code>_config.yml</code>. For more information on how to set up multiple language support, please refer to the <a href="/">Guide to Multiple Language Support in Minos</a>.</p>
 <p><strong>Example: localize navigation menus</strong></p>
-<figure class="highlight yaml hljs"><figcaption><span>_config.zh-cn.yml</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">menu:</span></span><br><span class="line">  <span class="hljs-string">归档:</span> <span class="hljs-string">/archives</span></span><br><span class="line">  <span class="hljs-string">文档:</span> <span class="hljs-string">/categories/Documentation</span></span><br><span class="line">  <span class="hljs-string">关于:</span> <span class="hljs-string">/about</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight yaml hljs"><figcaption><span>_config.zh-cn.yml</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-attr">menu:</span></span><br><span class="line">  <span class="hljs-string">归档:</span> <span class="hljs-string">/archives</span></span><br><span class="line">  <span class="hljs-string">文档:</span> <span class="hljs-string">/categories/Documentation</span></span><br><span class="line">  <span class="hljs-string">关于:</span> <span class="hljs-string">/about</span></span><br></pre></td></tr></tbody></table></figure>
 <div style="border:1px solid #ccc">
 <img src="/gallery/docs/configuration/language.png" class="" title="Localize navigation menus" alt="Localize navigation menus">
 </div>
 
 <h2 id="Page-configurations"><a href="#Page-configurations" class="headerlink" title="Page configurations"></a>Page configurations</h2><p>Apart from the above two types of configuration, Minos also lets you customize any page or post with page configurations. For instance, you may wish to disable the comment function in some posts, or show an additional link in the navigation bar. All of these can be achieved with page configuration where you override the theme configurations in the post’s front-matter.</p>
 <p><strong>Example: override default navigation bar links</strong></p>
-<figure class="highlight markdown hljs"><figcaption><span>about.md</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">title: Minos - A Hexo theme</span><br><span class="line">date: 2018-05-14 18:15:58</span><br><span class="line">navbar<span class="hljs-emphasis">_links:</span></span><br><span class="line"><span class="hljs-emphasis">  Download:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fab fa-github</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Buy:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fas fa-shopping-cart</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Help: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">---</span></span><br><span class="line"><span class="hljs-emphasis"># This is the post content...</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight markdown hljs"><figcaption><span>about.md</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line">title: Minos - A Hexo theme</span><br><span class="line">date: 2018-05-14 18:15:58</span><br><span class="line">navbar<span class="hljs-emphasis">_links:</span></span><br><span class="line"><span class="hljs-emphasis">  Download:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fab fa-github</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Buy:</span></span><br><span class="line"><span class="hljs-emphasis">    icon: fas fa-shopping-cart</span></span><br><span class="line"><span class="hljs-emphasis">    url: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">  Help: https://github.com/ppoffice/hexo-theme-minos</span></span><br><span class="line"><span class="hljs-emphasis">---</span></span><br><span class="line"><span class="hljs-emphasis"># This is the post content...</span></span><br></pre></td></tr></tbody></table></figure>
 <div style="border:1px solid #ccc">
 <img src="/gallery/docs/configuration/page.png" class="" title="Override default navigation bar links" alt="Override default navigation bar links">
 </div>
@@ -267,35 +265,6 @@
             </div>
             
             
-<div class="column is-narrow has-text-centered">
-    <div class="dropdown is-up is-right is-hoverable" style="margin-top: -0.2em;">
-        <div class="dropdown-trigger">
-            <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu7">
-                <span class="icon">
-                    <i class="fas fa-globe"></i>
-                </span>
-                <span>简体中文</span>
-                <span class="icon is-small">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-            </button>
-        </div>
-        <div class="dropdown-menu has-text-left" role="menu">
-            <div class="dropdown-content">
-            
-                <a href="/Configuring-Minos/" class="dropdown-item">
-                    简体中文
-                </a>
-            
-                <a href="/en/Configuring-Minos/" class="dropdown-item">
-                    English
-                </a>
-            
-            </div>
-        </div>
-    </div>
-</div>
-
         </div>
     </div>
 </footer>

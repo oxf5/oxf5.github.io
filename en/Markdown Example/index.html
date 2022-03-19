@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/Markdown%20Example/" rel="alternate" hreflang="zh-CN" />
-    
 
 
 <meta name="description" content="">
@@ -455,20 +453,20 @@ id sem consectetuer libero luctus adipiscing.
 <p>Code:</p>
 <pre><code>Here's an example:
 
-<figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function test() {</span><br><span class="line">  console.log("notice the blank line before this function?");</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext hljs"><table><tbody><tr><td class="code"><pre><span class="line">function test() {</span><br><span class="line">  console.log("notice the blank line before this function?");</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
 <p>Preview:</p>
 <hr>
 <p>Here’s an example:</p>
-<figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function test() {</span><br><span class="line">  console.log("notice the blank line before this function?");</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext hljs"><table><tbody><tr><td class="code"><pre><span class="line">function test() {</span><br><span class="line">  console.log("notice the blank line before this function?");</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <hr>
 <h4 id="Syntax-Highlighting"><a href="#Syntax-Highlighting" class="headerlink" title="Syntax Highlighting"></a>Syntax Highlighting</h4><p>In your fenced block, add an optional language identifier and we’ll run it through syntax highlighting (<a target="_blank" rel="noopener" href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">Support Languages</a>).</p>
 <p>Code:</p>
-<pre><code><figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'redcarpet'</span></span><br><span class="line">markdown = <span class="title class_">Redcarpet</span>.new(<span class="hljs-string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></tbody></table></figure>
+<pre><code><figure class="highlight ruby hljs"><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'redcarpet'</span></span><br><span class="line">markdown = <span class="title class_">Redcarpet</span>.new(<span class="hljs-string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
 <p>Preview:</p>
 <hr>
-<figure class="highlight ruby hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'redcarpet'</span></span><br><span class="line">markdown = <span class="title class_">Redcarpet</span>.new(<span class="hljs-string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight ruby hljs"><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'redcarpet'</span></span><br><span class="line">markdown = <span class="title class_">Redcarpet</span>.new(<span class="hljs-string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></tbody></table></figure>
 <hr>
 <h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>HTML Tag: <code>&lt;hr /&gt;</code><br>Places <strong>three or more hyphens (-), asterisks (*), or underscores (_)</strong> on a line by themselves. You may use spaces between the hyphens or asterisks.</p>
 <p>Code:</p>
@@ -493,7 +491,7 @@ ___
 <p>Separates column by <strong>pipe (|)</strong> and header by <strong>dashes (-)</strong>, and uses <strong>colon (:)</strong> for alignment.</p>
 <p>The outer <strong>pipes (|)</strong> and alignment are optional. There are <strong>3 delimiters</strong> each cell at least for separating header.</p>
 <p>Code:</p>
-<figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">| Left | Center | Right |</span><br><span class="line">|:-----|:------:|------:|</span><br><span class="line">|aaa   |bbb     |ccc    |</span><br><span class="line">|ddd   |eee     |fff    |</span><br><span class="line"></span><br><span class="line"> A | B</span><br><span class="line">---|---</span><br><span class="line">123|456</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">A |B</span><br><span class="line">--|--</span><br><span class="line">12|45</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext hljs"><table><tbody><tr><td class="code"><pre><span class="line">| Left | Center | Right |</span><br><span class="line">|:-----|:------:|------:|</span><br><span class="line">|aaa   |bbb     |ccc    |</span><br><span class="line">|ddd   |eee     |fff    |</span><br><span class="line"></span><br><span class="line"> A | B</span><br><span class="line">---|---</span><br><span class="line">123|456</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">A |B</span><br><span class="line">--|--</span><br><span class="line">12|45</span><br></pre></td></tr></tbody></table></figure>
 <p>Preview:</p>
 <hr>
 <table>
@@ -685,7 +683,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 <p>It’s an extension.</p>
 <p>GFM adds syntax to strikethrough text.</p>
 <p>Code:</p>
-<figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~Mistaken text.~~</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext hljs"><table><tbody><tr><td class="code"><pre><span class="line">~~Mistaken text.~~</span><br></pre></td></tr></tbody></table></figure>
 <p>Preview:</p>
 <hr>
 <p><del>Mistaken text.</del></p>
@@ -703,7 +701,7 @@ A backtick-delimited string in a code span: `` `foo` ``
 <hr>
 <p>GFM will autolink standard URLs.</p>
 <p>Code:</p>
-<figure class="highlight plaintext hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/emn178/markdown</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext hljs"><table><tbody><tr><td class="code"><pre><span class="line">https://github.com/emn178/markdown</span><br></pre></td></tr></tbody></table></figure>
 <p>Preview:</p>
 <hr>
 <p><a target="_blank" rel="noopener" href="https://github.com/emn178/markdown">https://github.com/emn178/markdown</a></p>
@@ -826,35 +824,6 @@ This is another regular paragraph.
             </div>
             
             
-<div class="column is-narrow has-text-centered">
-    <div class="dropdown is-up is-right is-hoverable" style="margin-top: -0.2em;">
-        <div class="dropdown-trigger">
-            <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu7">
-                <span class="icon">
-                    <i class="fas fa-globe"></i>
-                </span>
-                <span>English</span>
-                <span class="icon is-small">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-            </button>
-        </div>
-        <div class="dropdown-menu has-text-left" role="menu">
-            <div class="dropdown-content">
-            
-                <a href="/Markdown%20Example/" class="dropdown-item">
-                    简体中文
-                </a>
-            
-                <a href="/en/Markdown%20Example/" class="dropdown-item">
-                    English
-                </a>
-            
-            </div>
-        </div>
-    </div>
-</div>
-
         </div>
     </div>
 </footer>

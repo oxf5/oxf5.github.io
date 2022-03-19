@@ -8,8 +8,6 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/Enable-Search-Engine-Integration-in-Minos/" rel="alternate" hreflang="zh-CN" />
-    
 
 
 <meta name="description" content="">
@@ -184,10 +182,10 @@
 <h2 id="Out-of-box-services"><a href="#Out-of-box-services" class="headerlink" title="Out-of-box services"></a>Out-of-box services</h2><h3 id="Insight-search"><a href="#Insight-search" class="headerlink" title="Insight search"></a>Insight search</h3><blockquote class="colorquote warning"><p>From Minos 2.0.0, you no longer need to install <code>hexo-generator-json-content</code> to be able to use the insight search.</p>
 </blockquote>
 
-<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">search:</span></span><br><span class="line">    <span class="hljs-attr">type:</span> <span class="hljs-string">insight</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-attr">search:</span></span><br><span class="line">    <span class="hljs-attr">type:</span> <span class="hljs-string">insight</span></span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="Google-custom-search-engine-CSE"><a href="#Google-custom-search-engine-CSE" class="headerlink" title="Google custom search engine (CSE)"></a>Google custom search engine (CSE)</h3><p><a target="_blank" rel="noopener" href="https://cse.google.com/cse/create/new">Installation instructions</a></p>
-<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">search:</span></span><br><span class="line">    <span class="hljs-attr">type:</span> <span class="hljs-string">google-cse</span></span><br><span class="line">    <span class="hljs-attr">cx:</span> <span class="hljs-string">xxxxxxxxxxxxxxxxx</span>  <span class="hljs-comment"># (required)</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight yaml hljs"><figcaption><span>_config.yml</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line"><span class="hljs-attr">search:</span></span><br><span class="line">    <span class="hljs-attr">type:</span> <span class="hljs-string">google-cse</span></span><br><span class="line">    <span class="hljs-attr">cx:</span> <span class="hljs-string">xxxxxxxxxxxxxxxxx</span>  <span class="hljs-comment"># (required)</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>The <code>cx</code> value can be found on your CSE setup page’s url or public url like below.</p>
 <img src="/gallery/docs/configuration/google-cse.jpg" class="">
@@ -249,35 +247,6 @@
             </div>
             
             
-<div class="column is-narrow has-text-centered">
-    <div class="dropdown is-up is-right is-hoverable" style="margin-top: -0.2em;">
-        <div class="dropdown-trigger">
-            <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu7">
-                <span class="icon">
-                    <i class="fas fa-globe"></i>
-                </span>
-                <span>English</span>
-                <span class="icon is-small">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-            </button>
-        </div>
-        <div class="dropdown-menu has-text-left" role="menu">
-            <div class="dropdown-content">
-            
-                <a href="/Enable-Search-Engine-Integration-in-Minos/" class="dropdown-item">
-                    简体中文
-                </a>
-            
-                <a href="/en/Enable-Search-Engine-Integration-in-Minos/" class="dropdown-item">
-                    English
-                </a>
-            
-            </div>
-        </div>
-    </div>
-</div>
-
         </div>
     </div>
 </footer>
